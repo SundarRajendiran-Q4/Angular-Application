@@ -4,7 +4,6 @@ module.controller("TreeCtrl", function($scope,$http) {
 
     $http.get('https://raw.githubusercontent.com/SundarRajendiran-Q4/Angular-Application/master/tree.json').then(function(response) {
            $scope.treeFamily = response.data;
-
     });
 
 });
